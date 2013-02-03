@@ -2,6 +2,7 @@ package com.example.dcontrol;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.Menu;
 import android.view.MotionEvent;
@@ -22,6 +23,7 @@ public class MainActivity extends Activity {
 	Button mButtonZs;
 	Button mButtonSize;
 	Button mButtonKapan;
+	Button mButtonMode;
 	TextView textFast;
 	TextView textJinji;
 	TextView textX;
@@ -39,13 +41,14 @@ public class MainActivity extends Activity {
 	double numSize;
 	int numFast;
 	int numJinji;
-	
+	boolean kapan;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
+        kapan=true;
         numFast=100;
         numJinji=80;
         numSize=1.000;
@@ -54,6 +57,7 @@ public class MainActivity extends Activity {
         this.mButtonJinjiP=((Button)findViewById(R.id.buttonJinjiP));//进给+
         this.mButtonJinjiS=((Button)findViewById(R.id.buttonJinjiS));//进给-
         mButtonSize=((Button)findViewById(R.id.buttonSize));
+        mButtonMode=((Button)findViewById(R.id.btnMode));
        
         mButtonXp=((Button)findViewById(R.id.buttonXp));
         mButtonXs=((Button)findViewById(R.id.buttonXs));
@@ -96,10 +100,13 @@ public class MainActivity extends Activity {
         textSize.setTextColor(Color.GREEN);
         textKnife.setTextColor(Color.GREEN);
         textCool.setTextColor(Color.GREEN);
-        textSpeed.setTextColor(Color.GREEN);
+       // textSpeed.setTextColor(Color.GREEN);
+        textSpeed.setTextColor(Color.CYAN);
         textKapan.setTextColor(Color.GREEN);
-        textMainArbor.setTextColor(Color.GREEN);
-        
+       
+       // textMainArbor.setTextColor(Color.GREEN);
+        textMainArbor.setTextColor(Color.MAGENTA);
+       
         
         
         mButtonFastP.setOnTouchListener(new View.OnTouchListener()
@@ -383,6 +390,64 @@ public class MainActivity extends Activity {
         
               }
         });
+        
+        mButtonKapan.setOnTouchListener(new View.OnTouchListener()
+        {
+
+			public boolean onTouch(View v, MotionEvent event) {
+				switch (event.getAction())
+				{
+				case MotionEvent.ACTION_DOWN:
+				{
+					if(kapan)
+					{
+					textKapan.setText("紧");
+					kapan=!kapan;
+					}else{
+						kapan=!kapan;
+						textKapan.setText("松");
+					}
+				}
+				
+				
+				}
+			
+				// TODO Auto-generated method stub
+				return false;
+			
+        	
+        
+              }
+        });
+        
+        
+        mButtonMode.setOnTouchListener(new View.OnTouchListener()
+        {
+
+			public boolean onTouch(View v, MotionEvent event) {
+				switch (event.getAction())
+				{
+				case MotionEvent.ACTION_UP:
+				{
+					
+					//Intent enabler = new Intent(MainActivity.this, DCAutom.class);
+					Intent enabler = new Intent(MainActivity.this, DCAutom.class);
+					startActivity(enabler);
+					break;
+				}
+				
+				
+				}
+			
+				// TODO Auto-generated method stub
+				return false;
+			
+        	
+        
+              }
+        });
+        
+        
     }
 
     @Override

@@ -1,0 +1,208 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <Button
+        android:id="@+id/btnMode"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="-6dp"
+        android:layout_y="2dp"
+        android:text="自动模式" />
+     
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="19dp"
+        android:layout_x="56dp"
+        android:layout_y="47dp"
+        android:text="X轴"
+        android:textSize="22px" />
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_x="56dp"
+        android:layout_y="71dp"
+        android:text="Y轴"
+        android:textSize="22px" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_x="56dp"
+        android:layout_y="98dp"
+        android:text="Z轴"
+        android:textSize="22px" />
+     <TextView
+        android:id="@+id/textViewX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="37dp"
+        android:text="0000.000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/textViewY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="65dp"
+        android:text="0000.000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/textViewZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_x="130dp"
+        android:layout_y="92dp"
+        android:text="0000.000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40px" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="160dp"
+        android:text="主轴" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="275dp"
+        android:layout_y="140dp"
+        android:text="转速" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="100dp"
+        android:layout_y="160dp"
+        android:text="卡盘" />
+    
+     <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="200dp"
+        android:layout_y="160dp"
+        android:text="刀补号" />
+      <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="300dp"
+        android:layout_y="160dp"
+        android:text="冷却" />
+
+    <TextView
+        android:id="@+id/textViewCool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="335dp"
+        android:layout_y="161dp"
+        android:text="关" />
+      <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_x="1dp"
+        android:layout_y="140dp"
+        android:text="快速倍率" />
+
+    <TextView
+        android:id="@+id/textViewFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_x="61dp"
+        android:layout_y="140dp"
+        android:text="100%" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="135dp"
+        android:layout_y="140dp"
+        android:text="进给倍率" />
+
+    <TextView
+        android:id="@+id/textViewJinji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="104dp"
+        android:layout_x="195dp"
+        android:layout_y="140dp"
+        android:text="110%" />
+    <TextView
+        android:id="@+id/textViewKnife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="250dp"
+        android:layout_y="160dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textViewSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="310dp"
+        android:layout_y="140dp"
+        android:text="0" />
+
+     <TextView
+        android:id="@+id/textViewMainArbor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="160dp"
+        android:text="停止" />
+     <TextView
+        android:id="@+id/textViewKapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="135dp"
+        android:layout_y="160dp"
+        android:text="松" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="465dp"
+        android:layout_y="1dp"
+        android:text="开/关" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="375dp"
+        android:layout_y="140dp"
+        android:text="连续" />
+
+    <TextView
+        android:id="@+id/textViewDelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="421dp"
+        android:layout_y="140dp"
+        android:text="00:00:00" />
+
+</AbsoluteLayout>

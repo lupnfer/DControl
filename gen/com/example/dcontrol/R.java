@@ -29,7 +29,7 @@ public final class R {
         public static final int buttonYs=0x7f070008;
         public static final int buttonZp=0x7f070009;
         public static final int buttonZs=0x7f07000a;
-        public static final int menu_settings=0x7f070024;
+        public static final int menu_settings=0x7f070025;
         public static final int textView1=0x7f070013;
         public static final int textView11=0x7f07001b;
         public static final int textView12=0x7f07001d;
@@ -42,6 +42,7 @@ public final class R {
         public static final int textView8=0x7f070003;
         public static final int textView9=0x7f070020;
         public static final int textViewCool=0x7f070021;
+        public static final int textViewDelay=0x7f070024;
         public static final int textViewFast=0x7f070002;
         public static final int textViewJinji=0x7f070004;
         public static final int textViewKapan=0x7f07001c;
@@ -55,6 +56,7 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int dcautom=0x7f030001;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;
