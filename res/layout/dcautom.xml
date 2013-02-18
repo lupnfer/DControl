@@ -204,5 +204,69 @@
         android:layout_x="421dp"
         android:layout_y="140dp"
         android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="315dp"
+        android:layout_y="65dp"
+        android:text="实际速度" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="315dp"
+        android:layout_y="80dp"
+        android:text="加工件数" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="315dp"
+        android:layout_y="95dp"
+        android:text="循环次数" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="315dp"
+        android:layout_y="50dp"
+        android:text="编程速度" />
+
+    <TextView
+        android:id="@+id/textViewCodeSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="384dp"
+        android:layout_y="50dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textViewActSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="384dp"
+        android:layout_y="65dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textViewInNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="384dp"
+        android:layout_y="80dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textViewCircleNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="384dp"
+        android:layout_y="95dp"
+        android:text="0" />
 
 </AbsoluteLayout>

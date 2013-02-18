@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
+//import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -27,6 +27,11 @@ public class DCAutom extends Activity{
 	TextView textMainArbor;
 	TextView textKapan;
 	TextView textDelay;
+	TextView textCodeSpeed;
+	TextView textInSpeed;
+	TextView textInNum;
+	TextView textCircleNum;
+	
 	
 	 public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
@@ -45,7 +50,10 @@ public class DCAutom extends Activity{
 	    	textMainArbor=((TextView)findViewById(R.id.textViewMainArbor));
 	    	textKapan=((TextView)findViewById(R.id.textViewKapan));
 	    	textDelay=((TextView)findViewById(R.id.textViewDelay));
-	    	
+	    	textCodeSpeed=((TextView)findViewById(R.id.textViewCodeSpeed));
+	    	textInSpeed=((TextView)findViewById(R.id.textViewActSpeed));
+	    	textInNum=((TextView)findViewById(R.id.textViewInNum));
+	    	textCircleNum=((TextView)findViewById(R.id.textViewCircleNum));
 	    	
 	        textX.setTextColor(Color.BLUE);
 	        textY.setTextColor(Color.BLUE);
@@ -58,30 +66,26 @@ public class DCAutom extends Activity{
 	        textKapan.setTextColor(Color.GREEN);
 	        textMainArbor.setTextColor(Color.GREEN);
 	        textDelay.setTextColor(Color.GREEN);
+	        textCodeSpeed.setTextColor(Color.GREEN);
+	    	textInSpeed.setTextColor(Color.GREEN);
+	    	textInNum.setTextColor(Color.GREEN);
+	    	textCircleNum.setTextColor(Color.GREEN);
 	        
 	        mButtonMode.setOnTouchListener(new View.OnTouchListener()
 	        {
-
 				public boolean onTouch(View v, MotionEvent event) {
 					switch (event.getAction())
 					{
 					case MotionEvent.ACTION_UP:
 					{
-						
 						//Intent enabler = new Intent(MainActivity.this, DCAutom.class);
 						Intent enabler = new Intent(DCAutom.this, MainActivity.class);
 						startActivity(enabler);
 						break;
-					}
-					
-					
-					}
-				
+					}	
+					}				
 					// TODO Auto-generated method stub
 					return false;
-				
-	        	
-	        
 	              }
 	        });
 	 }

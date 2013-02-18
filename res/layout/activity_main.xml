@@ -46,7 +46,7 @@
         android:layout_marginRight="104dp"
         android:layout_x="195dp"
         android:layout_y="140dp"
-        android:text="110%" />
+        android:text="80%" />
 
     <Button
         android:id="@+id/buttonXp"

@@ -43,6 +43,13 @@ public class MainActivity extends Activity {
 	int numJinji;
 	boolean kapan;
 	
+	
+	//帧相关
+	char Head[]={0xff,0x41,0x4f,0x47,0x45,0xfe};//帧头 
+	char End[]={0xfe,0x45,0x47,0x4f,0x41,0xff};//帧尾
+	short No=0;// public short getUnsignedByte (short data){return data&0x0FFFF;}  //将data字节型数据转换为0~65535 (0xFFFF 即 WORD)。
+	char Key;
+       	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -323,20 +330,12 @@ public class MainActivity extends Activity {
 				{
 				case MotionEvent.ACTION_DOWN:
 				{
-					
 					numY-=numSize;
 					textY.setText(String.format("%4.3f",numY));
-					
 				}
-				
-				
 				}
-			
 				// TODO Auto-generated method stub
 				return false;
-			
-        	
-        
               }
         });
         
@@ -348,13 +347,10 @@ public class MainActivity extends Activity {
 				{
 				case MotionEvent.ACTION_DOWN:
 				{
-					
 					numZ+=numSize;
 					textZ.setText(String.format("%4.3f",numZ));
-					
 				}
-				
-				
+
 				}
 			
 				// TODO Auto-generated method stub
@@ -374,7 +370,6 @@ public class MainActivity extends Activity {
 				{
 				case MotionEvent.ACTION_DOWN:
 				{
-					
 					numZ-=numSize;
 					textZ.setText(String.format("%4.3f",numZ));
 					
@@ -407,9 +402,7 @@ public class MainActivity extends Activity {
 						kapan=!kapan;
 						textKapan.setText("松");
 					}
-				}
-				
-				
+				}	
 				}
 			
 				// TODO Auto-generated method stub
@@ -428,15 +421,12 @@ public class MainActivity extends Activity {
 				switch (event.getAction())
 				{
 				case MotionEvent.ACTION_UP:
-				{
-					
+				{	
 					//Intent enabler = new Intent(MainActivity.this, DCAutom.class);
 					Intent enabler = new Intent(MainActivity.this, DCAutom.class);
 					startActivity(enabler);
 					break;
-				}
-				
-				
+				}		
 				}
 			
 				// TODO Auto-generated method stub
